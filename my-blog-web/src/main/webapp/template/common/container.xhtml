@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+  <ui:composition>
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">The Bootstrap Blog</h1>
+        <p class="lead blog-description">Sample project</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <ui:insert name="content"></ui:insert>
+          <!-- /.blog-post -->
+        </div>
+        <!-- /.blog-main -->
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <ui:insert name="sidebar">
+            <ui:include src="/template/common/sidebar.xhtml" />
+          </ui:insert>
+        </div>
+        <!-- /.blog-sidebar -->
+      </div>
+      <!-- /.row -->
+    </div>
+  </ui:composition>
+</h:body>
+</html>
